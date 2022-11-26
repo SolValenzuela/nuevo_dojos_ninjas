@@ -41,25 +41,7 @@ class Dojo:
         return connectToMySQL('esquema_dojos_y_ninjas').query_db(query,data)
     
 
-    # @classmethod
-    # def get_dojos_ninjas( cls , data ):
-    #     query = "SELECT * FROM dojos LEFT JOIN ninjas ON ninjas.dojo_id = dojos.id WHERE dojos.id = %(id)s;"
-    #     results = connectToMySQL('esquema_dojos_y_ninjas').query_db( query , data )
-        
-    #     dojo = cls( results[0] )
-    #     for ninja in results:
-    #         # ahora parseamos los datos de ninjas para crear instancias de ninjas y agregarlas a nuestra lista
-    #         ninja_data = {
-    #             "id" : ninja["ninjas.id"],
-    #             "first_name" : ninja["first_name"],
-    #             "last_name" : ninja["last_name"],
-    #             "age" : ninja["age"],
-    #             "dojo_id" : ninja["dojo_id"],
-    #             "created_at" : ninja["ninjas.created_at"],
-    #             "updated_at" : ninja["ninjas.updated_at"]
-    #         }
-    #         dojo.ninjas.append( ninja.Ninja(ninja_data))
-    #     return dojo
+ 
     
 
     @classmethod
